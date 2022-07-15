@@ -4,9 +4,40 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Library</title>
+    <link rel="stylesheet" href="https://bootswatch.com/4/lux/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/7e129bd375.js" crossorigin="anonymous"></script>
+    <script src="script.js" defer></script>
+    <title>My Library App</title>
 </head>
 <body>
-    
+    <div class="container mt-4">
+        <h1 class="display-4 text-center">
+            <i class="fa-solid fa-book text-primary"></i>
+            </i>My<span class="text-success">Reading</span>List</h1>
+            <form id="book-form">
+                <div class="form-group">
+                    <label for="title">Title</label>
+                    <input type="text" id="title" class="form-control">
+                <div class="form-group">
+                    <label for="author">Author</label>
+                    <input type="text" id="author" class="form-control">
+                <div class="form-group">
+                    <label for="status">Status</label>
+                    <input type="text" id="status" class="form-control">
+                </div>
+                <input type="submit" value="Add Book" class="btn btn-primary btn-block">
+            </form>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Title</th>
+                        <th>Author</th>
+                        <th>Status</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody id="book-list"></tbody>
+            </table>
+    </div>
 </body>
 </html>
